@@ -32,7 +32,7 @@ This repository provides a Python script to set up a standard directory structur
 
 
    ```bash
-   python script.py <base_directory>
+   python script.py D:/Template
    ```
 
    - This above script will create the standard directory structure in the D:/Template directory. Adjust the path as needed based on your system and preferences.
