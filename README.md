@@ -20,9 +20,10 @@ This repository provides a Python script to set up a standard directory structur
    cd ml_pipeline_project_structure
 
 2. **Edit the Script:**
-   - Open script and modify the main() function to set your desired base directory and project name.
+   - Open script and modify the `main()` function to set your desired base directory and project name.
 
 3. **Run the Script**:
-   Make sure Python is installed. Run the script with:
+   - Make sure Python is installed. Run the script with:
    ```bash
    python script.py
+  - This command will create a new directory with the specified name and populate it with the predefined structure and placeholder files.
