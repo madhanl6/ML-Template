@@ -16,8 +16,8 @@ This repository provides a Python script to set up a standard directory structur
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ml_pipeline_project_structure.git
-   cd ml_pipeline_project_structure
+   git clone https://github.com/madhanl6/ML-Template.git
+   cd ML-Template
    ```
 
 2. **Edit the Script:**
