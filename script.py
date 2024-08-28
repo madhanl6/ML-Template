@@ -79,6 +79,10 @@ def create_project_structure(base_dir):
     print(f"Project structure created successfully at {base_dir}")
 
 def main():
+    if len(sys.argv) < 2:
+        print("python script.py <base_directory>")
+        sys.exit(1)
+    
     base_dir = sys.argv[1]
     create_project_structure(base_dir)
 
