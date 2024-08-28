@@ -1,4 +1,5 @@
 import os
+import sys
 
 def create_project_structure(base_dir):
     """Create a directory structure for the ML pipeline."""
@@ -78,7 +79,7 @@ def create_project_structure(base_dir):
     print(f"Project structure created successfully at {base_dir}")
 
 def main():
-    base_dir = 'D:\ML_Pipeline'  # Update base directory for the project as required
+    base_dir = sys.argv[1]
     create_project_structure(base_dir)
 
 if __name__ == '__main__':
