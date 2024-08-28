@@ -19,7 +19,8 @@ This repository provides a Python script to set up a standard directory structur
    git clone https://github.com/YOUR_USERNAME/ml_pipeline_project_structure.git
    cd ml_pipeline_project_structure
 
-2. Edit the Script: Open create_project_structure.py and modify the main() function to set your desired base directory and project name.
+2. Edit the Script:
+   Open create_project_structure.py and modify the main() function to set your desired base directory and project name.
 
 3. **Run the Script**:
    Make sure Python is installed. Run the script with:
