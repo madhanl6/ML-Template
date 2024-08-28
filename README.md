@@ -20,15 +20,22 @@ This repository provides a Python script to set up a standard directory structur
    cd ML-Template
    ```
 
-2. **Edit the Script:**
-   - Open script and modify the `main()` function to set your desired base directory and project name.
-
-3. **Run the Script**:
+2. **Run the Script**:
    - Make sure Python is installed. Run the script with:
 
+
    ```bash
-   python script.py
+   python script.py <base_directory>
    ```
+
+   - Replace `<base_directory>` with the desired path where the standard directory structure should be created. For example
+
+
+   ```bash
+   python script.py <base_directory>
+   ```
+
+   - This above script will create the standard directory structure in the D:/Template directory. Adjust the path as needed based on your system and preferences.
 
 ## Customization
 
@@ -36,5 +43,6 @@ The file `script.py` can be further modified to fit specific needs. For example,
 
 ## Contributing
 
-Contributions are welcome! If anyone have suggestions for improvements or additional features, please open an issue or submit a pull request.
+Contributions are welcome! If you have suggestions for improvements or additional features, please open an issue or submit a pull request. This updated README provides a comprehensive overview of the changes made to the project structure and how to use the script effectively. Feel free to modify any sections further to better suit your project needs!
+
   
