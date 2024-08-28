@@ -5,7 +5,7 @@ This repository provides a Python script to set up a standard directory structur
 ## Files
 
 - `script.py`: A Python script to create a structured directory for an ML pipeline project.
-- `structure.png`: An image showing the directory structure created by the script.
+- `Image.png`: An image showing the directory structure created by the script.
 
 ## Features
 
@@ -14,7 +14,14 @@ This repository provides a Python script to set up a standard directory structur
 
 ## Usage
 
-1. **Run the Script**:
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/ml_pipeline_project_structure.git
+   cd ml_pipeline_project_structure
+
+2. Edit the Script: Open create_project_structure.py and modify the main() function to set your desired base directory and project name.
+
+3. **Run the Script**:
    Make sure Python is installed. Run the script with:
    ```bash
    python script.py
