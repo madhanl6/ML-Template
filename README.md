@@ -43,6 +43,6 @@ The file `script.py` can be further modified to fit specific needs. For example,
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions for improvements or additional features, please open an issue or submit a pull request. This updated README provides a comprehensive overview of the changes made to the project structure and how to use the script effectively. Feel free to modify any sections further to better suit your project needs!
+Contributions are welcome! If you have suggestions for improvements or additional features, please open an issue or submit a pull request. Feel free to modify any sections further to better suit your project needs!
 
   
