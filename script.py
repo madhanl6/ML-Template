@@ -1,9 +1,10 @@
 import os
 import sys
 
+
 def create_project_structure(base_dir):
     """Create a directory structure for the ML pipeline."""
-    
+
     # Define the directory structure
     directories = [
         "data/raw",
@@ -19,9 +20,9 @@ def create_project_structure(base_dir):
         "backend/api",
         "backend/services",
         "backend/models",
-        "backend/tests"
+        "backend/tests",
     ]
-    
+
     files = {
         "src/__init__.py": "",
         "src/data_preprocessing.py": "# Data cleaning and preprocessing code here",
@@ -63,28 +64,51 @@ def create_project_structure(base_dir):
         "backend/requirements.txt": "# Python dependencies for FastAPI",
         "backend/tests/__init__.py": "",
         "backend/tests/test_endpoints.py": "# Tests for FastAPI endpoints",
-        "backend/tests/test_utils.py": "# Tests for utility functions in backend"
+        "backend/tests/test_utils.py": "# Tests for utility functions in backend",
     }
-    
+
     # Create directories
     for directory in directories:
         os.makedirs(os.path.join(base_dir, directory), exist_ok=True)
-    
+
     # Create files with placeholder content
     for file_path, content in files.items():
         full_path = os.path.join(base_dir, file_path)
-        with open(full_path, 'w') as file:
+        with open(full_path, "w") as file:
             file.write(content)
-    
+
     print(f"Project structure created successfully at {base_dir}")
 
+
 def main():
-    if len(sys.argv) < 2:
-        print("python script.py <base_directory>")
-        sys.exit(1)
-    
-    base_dir = sys.argv[1]
+    if len(sys.argv) == 2:
+        base_dir = sys.argv[1]
+
+    else:
+        user_input = input(
+            "Do you want to generate the project structure in the current directory? (y/n): "
+        ).lower()
+        if user_input == "y":
+            base_dir = os.getcwd()
+        else:
+            print("Usage: python script.py <base_directory>")
+            sys.exit(1)
+
     create_project_structure(base_dir)
 
-if __name__ == '__main__':
+    # Ask the user to delete this Python file
+    print("Project structure has been created. You can now delete this Python file.")
+    delete_input = input("Do you want to delete this Python file? (y/n): ").lower()
+    if delete_input == "y":
+        os.remove(__file__)
+        print("This Python file has been deleted.")
+    else:
+        print(
+            "This Python file was not deleted. You may want to remove it manually later."
+        )
+
+    sys.exit(0)
+
+
+if __name__ == "__main__":
     main()
