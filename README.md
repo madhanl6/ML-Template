@@ -29,16 +29,21 @@ This repository contains a Python script designed to establish a standard direct
    python script.py [<base_directory>]
    ```
 
-   - If you provide a `<base_directory>`, the structure will be created there. For example:
+   - If you specify a `<base_directory>`, the structure will be created there. For example:
 
    ```bash
    python script.py D:/Template
    ```
 
-   - If you don't provide a base directory, the script will ask if you want to use the current directory.
+   - If you do not provide a base directory, simply run:
+   
+   ```bash
+   python script.py
+   ```
+
+   - The script will then prompt you to confirm whether to use the current directory or specify a different one.
 
 3. **Follow the Prompts:**
-   - If no base directory is provided, you will be asked whether to use the current directory or to enter a different path.
    - After creating the structure, you will be prompted to decide if you want to delete the folder containing the script file.
 
 ## Customization
