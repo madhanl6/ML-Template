@@ -48,7 +48,7 @@ This repository contains a Python script designed to establish a standard direct
 
 ## Customization
 
-The script.py file can be modified to suit your specific needs. You can add more directories, change the placeholder content, or adjust the default structure according to your project requirements.
+The `script.py` file can be modified to suit your specific needs. You can add more directories, change the placeholder content, or adjust the default structure according to your project requirements.
 
 ## Contributing
 
