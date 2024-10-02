@@ -83,15 +83,19 @@ def create_project_structure(base_dir):
 def main():
     if len(sys.argv) == 2:
         base_dir = sys.argv[1]
-
     else:
         user_input = input(
             "Do you want to generate the project structure in the current directory? (y/n): "
         ).lower()
         if user_input == "y":
             base_dir = os.getcwd()
+        elif user_input == "n":
+            base_dir = input("Please enter the desired directory path: ")
+            if not os.path.isdir(base_dir):
+                print(f"The directory '{base_dir}' does not exist. Please provide a valid directory.")
+                sys.exit(1)
         else:
-            print("Usage: python script.py <base_directory>")
+            print("Invalid input. Please enter 'y' or 'n'.")
             sys.exit(1)
 
     create_project_structure(base_dir)
