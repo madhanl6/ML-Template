@@ -14,6 +14,16 @@ This repository contains a Python script designed to establish a standard direct
 - **Flexible Usage:** Offers the option to specify a base directory or use the current directory.
 - **Self-Cleanup Option:** Provides the choice to delete the script after creating the project structure.
 
+## Future Releases
+
+We have exciting plans for future updates to enhance the functionality and usability of this project:
+
+1. **Customizable Templates:** Introduce the ability for users to define their own directory and file structures via configuration files.
+2. **Interactive Command Line Interface (CLI):** Enhance the user experience by implementing an interactive CLI for better navigation and options.
+3. **Version Control Integration:** Automate the initialization of Git repositories and provide basic setup for initial commits and branching.
+4. **Environment Configuration:** Automatically set up virtual environments with specified packages and dependencies using `requirements.txt` or `environment.yml`.
+5. **Enhanced Documentation:** Provide comprehensive guides and examples for various machine learning workflows using the generated project structure.
+
 ## Usage
 
 1. **Clone the Repository:**
@@ -53,5 +63,3 @@ The `script.py` file can be modified to suit your specific needs. You can add mo
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or additional features, please open an issue or submit a pull request. Feel free to modify any sections further to better suit your project needs!
-
-  
