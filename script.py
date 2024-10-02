@@ -93,7 +93,7 @@ def get_base_directory():
     
     while True:
         user_input = input(
-            "Do you want to generate the project structure in the current directory? (y/n): "
+            "Do you want to generate the project structure in the current directory? (y/n) or type 'exit' to quit: "
         ).strip().lower()
         
         if user_input == "y":
@@ -104,8 +104,11 @@ def get_base_directory():
                 return base_dir
             else:
                 logging.error(f"The directory '{base_dir}' does not exist. Please provide a valid directory.")
+        elif user_input == "exit":
+            logging.info("Exiting the program.")
+            sys.exit()  # Exit the program
         else:
-            logging.warning("Invalid input. Please enter 'y' or 'n'.")
+            logging.warning("Invalid input. Please enter 'y', 'n', or 'exit'.")
 
 
 def main():
